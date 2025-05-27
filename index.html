@@ -3,69 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Offerwall Site</title>
+  <title>Offers - My Offerwall Site</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0; padding: 0;
-      background: #f9f9f9;
+      background: #fdfdfd;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #0073e6;
+      background: #a71d1d;
       color: white;
-      padding: 1rem 2rem;
+      padding: 20px 15px;
       text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
     }
     nav a {
-      color: white;
-      margin: 0 1rem;
+      color: #a71d1d;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
     }
     nav a:hover {
       text-decoration: underline;
     }
+    nav a.active {
+      text-decoration: underline;
+    }
     main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 15px;
     }
-    h1 {
-      margin-top: 0;
+    section {
+      margin-bottom: 40px;
     }
-    section.offers {
-      background: white;
-      padding: 1rem 2rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
+    h2 {
+      border-bottom: 2px solid #a71d1d;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
     }
-    section.offers h2 {
-      margin-top: 0;
-    }
-    ul.offer-list {
-      list-style: none;
-      padding: 0;
-    }
-    ul.offer-list li {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid #ddd;
+    ul {
+      padding-left: 20px;
     }
     footer {
+      background: #a71d1d;
+      color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 15px 10px;
       font-size: 0.9rem;
-      color: #666;
-      background: #eee;
-      margin-top: 3rem;
+      margin-top: 50px;
     }
     @media (max-width: 600px) {
-      main {
-        margin: 1rem;
-      }
       nav a {
         display: block;
-        margin: 0.5rem 0;
+        margin: 8px 0;
+      }
+      main {
+        margin: 20px 10px;
       }
     }
   </style>
@@ -73,35 +76,24 @@
 <body>
 
 <header>
-  <h1>My Offerwall Site</h1>
-  <nav>
-    <a href="#offers">Offers</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  My Offerwall Site
 </header>
 
-<main>
+<nav>
+  <a href="index.html" class="active">Offers</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <section id="offers" class="offers">
-    <h2>Available Offers</h2>
-    <ul class="offer-list">
-      <li>📱 Sign up for FreeCash and earn rewards.</li>
-      <li>🎮 Try this game and get bonus points.</li>
-      <li>🛒 Complete a survey to get paid.</li>
+<main>
+  <section id="offers">
+    <h2>Our Offers</h2>
+    <ul>
+      <li>Sign up with FreeCash and earn rewards.</li>
+      <li>Complete surveys and get points.</li>
+      <li>Try games and collect bonuses.</li>
     </ul>
   </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to My Offerwall Site! We provide you with real offers where you can earn rewards by completing tasks. Our mission is to help you earn safely and easily.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to reach out via email: <a href="mailto:contact@myofferwallsite.com">contact@myofferwallsite.com</a></p>
-  </section>
-
 </main>
 
 <footer>
